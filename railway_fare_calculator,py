@@ -1,0 +1,16 @@
+age=int(input("Enter your age:"))
+basic_fare=int(input("Enter the amount:"))
+if age<18:
+    print("No GST.")
+    print("Basic fare:",basic_fare)
+elif age<60:
+    gst=basic_fare*0.13
+    basic_fare=basic_fare+gst
+    print("Basic fare:",basic_fare)
+else:
+    discount=basic_fare*0.05
+    basic_fare= basic_fare-discount
+    gst=basic_fare*0.13
+    basic_fare=basic_fare+gst
+    print("Basic fare:",basic_fare)
+    
